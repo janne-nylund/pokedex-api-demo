@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { fetchPokemons, pokemonDetails } from "./api/fetchData";
 
@@ -14,7 +14,7 @@ export default function App() {
   const [details, setDetails] = useState([]);
   const [index, setIndex] = useState(0);
 
-  // preLoad "hack" that create <img> elemets with Pokemon sprites
+ /*  // preLoad "hack" that create <img> elemets with Pokemon sprites
   const preloadImages = useCallback(() => {
     details.forEach((item) => {
       document.createElement("img").src = item.src;
@@ -24,7 +24,7 @@ export default function App() {
   // call preloadImages on start and if return value of preloadImages changes
   useEffect(() => {
     preloadImages();
-  }, [preloadImages]);
+  }, [preloadImages]); */
 
   // load Pokemon name and url
   useEffect(() => {
