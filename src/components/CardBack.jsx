@@ -15,6 +15,7 @@ const CardBack = ({ flipped, setFlipped, pokemons, index }) => {
     fetchPokemonStats()
   }, [index])
 
+
   return (
     <div>
       <h2>{pokemons[index].name}</h2>
