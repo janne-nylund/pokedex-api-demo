@@ -66,7 +66,7 @@ export default function App() {
                     <div className="card-wrapper">                  
                     <Select pokemons={pokemons} handleChange={handleChange} />
                     <CardFront flipped={flipped} setFlipped={setFlipped} pokemons={pokemons} index={index} />
-                    <Buttons index={index} setIndex={setIndex} />
+                    <Buttons index={index} setIndex={setIndex} flipped={flipped} />
                     </div>
                   </div>
               <div className="flip-card-back">
