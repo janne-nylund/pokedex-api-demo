@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 
-const Card = ({ pokemons, index }) => {
+const CardFront = ({ flipped, setFlipped, pokemons, index }) => {
+
   return (
     <div>
       <h2>{pokemons[index].name}</h2>
@@ -14,12 +15,12 @@ const Card = ({ pokemons, index }) => {
       <p>
         <b>Type:</b>&nbsp;
         <span key={uuidv4()} className="types">
-          {pokemons[index].type}
+          {pokemons[index].type}  <button className="open-btn" onClick={() => setFlipped(!flipped)}>View Stats</button>
         </span>
       </p>
       <div className="description">{pokemons[index].description}</div>
-    </div>
+    </div >
   );
 };
 
-export default Card;
+export default CardFront;

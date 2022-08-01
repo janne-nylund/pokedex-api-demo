@@ -2,13 +2,13 @@
 
 html,
 body {
-  height: 100vh;
-  min-height: 100vh;
   padding: 0;
   margin: 0;
+ 
 }
 
 #root {
+  width: 100vw;
   height: 100vh;
 }
 
@@ -16,31 +16,35 @@ body {
   box-sizing: border-box;
 }
 
-.container {
-  margin-top: 10px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .App {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   text-align: center;
   color: rgb(8, 36, 37);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .card {
-  background-color: rgb(245, 245, 245);
-  border-radius: 5px;
-  margin: 30px auto;
-  padding: 20px;
   width: 400px;
+  height: 38rem;
+  margin: 30px auto;
+}
+
+.card-wrapper {
+  height: 38rem;
+  padding: 20px;
+  background-color: rgb(245, 245, 245);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px; 
+  width: 400px;
 }
 
 h1 {
+  
   color: #089ea8;
   font-size: 4rem;
   font-weight: 900;
@@ -152,3 +156,30 @@ select {
   align-items: center;
   margin: auto 0;
 }
+
+.open-btn {
+  background-color: #089ea8;
+  color: rgb(245, 245, 245);
+  cursor: pointer;
+  border: 0;
+  padding: 10px 14px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.open-btn:hover {
+  background-color: #09adb8;
+}
+
+.list {
+  margin: 0;
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.list li {
+  padding: 2px 0;
+}
+

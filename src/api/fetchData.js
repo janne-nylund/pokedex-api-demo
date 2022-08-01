@@ -8,4 +8,14 @@ export const fetchPokemons = async () => {
       console.log(err);
     }
 };
+
+export const fetchStats = async (id) => {
+  try {
+    const res = await fetch(`https://pokedex-data-api.herokuapp.com/stats/${id}`);
+    const data = await res.json();
+    return data.stats;
+  } catch (err) {
+    console.log(err)
+  }
+}
   
