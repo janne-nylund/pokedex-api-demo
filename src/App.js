@@ -58,7 +58,6 @@ export default function App() {
           {pokemons.length > 0 && (
             <div>
               <h1>POKÉDEX</h1>
-              <h3>Gen 1 Pokémon list</h3>
               <div className="card">
               <div className={`flip-card ${flipped ? "flipped" : ""}`}>
               <div className="flip-card-inner">
